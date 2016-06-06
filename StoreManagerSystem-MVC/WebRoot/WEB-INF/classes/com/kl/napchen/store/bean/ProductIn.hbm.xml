@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.kl.napchen.store.bean.ProductIn" table="t_product_in">
+		<id name="id" type="java.lang.Long">
+			<column name="id" />
+			<generator class="native" />
+		</id>
+		<property name="uid" type="java.lang.String">
+			<column name="uid" length="128" />
+		</property>
+		<property name="name" type="java.lang.String">
+			<column name="name" length="128" />
+		</property>
+		<property name="supplier" type="java.lang.String">
+			<column name="supplier" length="128" />
+		</property>
+		<property name="largeType" type="java.lang.String">
+			<column name="large_type" length="6" />
+		</property>
+		<property name="mediumType" type="java.lang.String">
+			<column name="medium_type" length="12" />
+		</property>
+		<property name="smallType" type="java.lang.String">
+			<column name="small_type" length="18" />
+		</property>
+		<property name="version" type="java.lang.String">
+			<column name="version" length="128" />
+		</property>
+		<property name="level" type="java.lang.String">
+			<column name="level" length="128" />
+		</property>
+		<property name="description" type="java.lang.String">
+			<column name="description" length="1024" />
+		</property>
+		<property name="price" type="java.lang.Double">
+			<column name="price" />
+		</property>
+		<property name="salePrice" type="java.lang.Double">
+			<column name="sale_price" />
+		</property>
+		<property name="discount" type="java.lang.Double">
+			<column name="discount" />
+		</property>
+		<property name="storeFlag" type="java.lang.String">
+			<column name="store_flag" length="2" />
+		</property>
+		<property name="number" type="java.lang.Integer">
+			<column name="number" />
+		</property>
+		<property name="operatorName" type="java.lang.String">
+			<column name="operator_name" length="128" />
+		</property>
+		<property name="operatorUid" type="java.lang.String">
+			<column name="operator_uid" length="128" />
+		</property>
+		<property name="inTime" type="java.sql.Timestamp">
+			<column name="in_time" />
+		</property>
+		<property name="holdFlag" type="java.lang.String">
+			<column name="hold_flag" length="2" />
+		</property>
+		<property name="holdReason" type="java.lang.String">
+			<column name="hold_reason" length="256" />
+		</property>
+		<property name="holdTime" type="java.sql.Timestamp">
+			<column name="hold_time" />
+		</property>
+		<property name="relFlag" type="java.lang.String">
+			<column name="rel_flag" length="2" />
+		</property>
+		<property name="relReason" type="java.lang.String">
+			<column name="rel_reason" length="256" />
+		</property>
+		<property name="relTime" type="java.sql.Timestamp">
+			<column name="rel_time" />
+		</property>
+		<property name="repairDoneFlag" type="java.lang.String">
+			<column name="repair_done_flag" length="2" />
+		</property>
+		<property name="repairDoneTime" type="java.sql.Timestamp">
+			<column name="repair_done_time" />
+		</property>
+		<property name="remark" type="java.lang.String">
+			<column name="remark" length="1024" />
+		</property>
+		
+		
+	</class>
+</hibernate-mapping>
